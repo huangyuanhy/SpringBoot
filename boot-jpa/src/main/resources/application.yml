@@ -1,0 +1,15 @@
+spring:
+  datasource:
+#   数据源基本配置
+    username: root
+    password: GuoWJ-521
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://119.23.105.32:3306/boot_jdbc
+
+  jpa:
+  # 打印sql
+    show-sql: true
+    hibernate:
+    #更新或者创建数据表结构
+      ddl-auto: update
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

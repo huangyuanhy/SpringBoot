@@ -1,0 +1,14 @@
+#application.properties。yaml是官方推荐的文件格式
+huangyuan:
+  secret: huangyuan is a cool man
+  number: ${random.int}
+
+server:
+  port: 12345
+
+#时区默认是美国 给改成中国北京  这个很重要 很重要很重要
+spring:
+  jackson:
+    date-format: yyyy-MM-dd:HH:mm:ss
+    time-zone: Asia/Chongqing
+

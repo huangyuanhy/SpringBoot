@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "huangyuan.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'huangyuan.secret'"
+  },
+  {
+    "name": "huangyuan.number",
+    "type": "java.lang.int",
+    "description": "A description for 'huangyuan.number'"
+  }
+]}

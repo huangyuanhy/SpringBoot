@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jdbc.mapper.EmployeeMapper">
+   
+    <select id="getEmpById" resultType="jdbc.bean.Employee">
+        SELECT * FROM employee WHERE id=#{id}
+    </select>
+
+    <insert id="insertEmp">
+        INSERT INTO employee(lastName,email,gender,d_id) VALUES (#{lastName},#{email},#{gender},#{dId})
+    </insert>
+    
+    <update id="updateEmp" >
+    	 update employee
+		<set>
+			<if test="lastName!=null and lastName!=''">sort=#{sort},</if>
+			<if test="gender!=null and gender!=''">gender=#{gender},</if>
+			<if test="email!=null and email!=''">email=#{email},</if>
+			<if test="dId!=null and dId!=''">d_id=#{dId},</if>
+		</set>
+		<where>id=#{id}</where>
+	</update>
+    
+</mapper>
