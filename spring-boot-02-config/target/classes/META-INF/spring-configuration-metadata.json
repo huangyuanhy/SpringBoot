@@ -31,7 +31,7 @@
     {
       "sourceType": "com.atguigu.springboot.bean.Person",
       "name": "person.last-name",
-      "description": "<bean class=\"Person\">\n      <property name=\"lastName\" value=\"字面量\/${key}从环境变量、配置文件中获取值\/#{SpEL}\"><\/property>\n <bean\/>",
+      "description": "<bean class=\"Person\">\r\n      <property name=\"lastName\" value=\"字面量\/${key}从环境变量、配置文件中获取值\/#{SpEL}\"><\/property>\r\n <bean\/>",
       "type": "java.lang.String"
     },
     {
